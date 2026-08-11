@@ -1,0 +1,9 @@
+# Local-only Claude Code settings (per-machine tool approvals)
+.claude/settings.local.json
+
+# Installed skill packages (tooling cache, not project source)
+.claude/skills/
+
+# OS cruft
+.DS_Store
+Thumbs.db
