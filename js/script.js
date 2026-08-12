@@ -133,26 +133,32 @@
   // Stylized CRESST wordmark: the source PNG has no real alpha around the
   // letters (it's a flattened render with a dark starfield backdrop), so a
   // CSS blend mode can't fully remove it — key out dark pixels instead.
-  processLogoImage(document.getElementById("cresstWordmarkKeyed"), function (r, g, b, a) {
-    var DARK = 55; // luminance at/below this becomes fully transparent
-    var BRIGHT = 130; // luminance at/above this stays fully opaque
-    var luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    var alpha = Math.max(0, Math.min(1, (luminance - DARK) / (BRIGHT - DARK)));
-    return [r, g, b, Math.round(a * alpha)];
+  // Applied to every instance on the page (nav copy + any showcase copy).
+  document.querySelectorAll(".js-key-wordmark").forEach(function (el) {
+    processLogoImage(el, function (r, g, b, a) {
+      var DARK = 55; // luminance at/below this becomes fully transparent
+      var BRIGHT = 130; // luminance at/above this stays fully opaque
+      var luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      var alpha = Math.max(0, Math.min(1, (luminance - DARK) / (BRIGHT - DARK)));
+      return [r, g, b, Math.round(a * alpha)];
+    });
   });
 
   // CRESST shield logo: source is on a solid white background with navy
   // shield/text/orbit-ring elements, meant for print. Key out the white to
   // transparent and recolor the navy to gold so it reads on a dark navbar.
-  processLogoImage(document.getElementById("cresstShieldLogo"), function (r, g, b, a) {
-    var luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
-    if (luminance > 235) {
-      return [r, g, b, 0]; // near-white background -> transparent
-    }
-    var isNavy = b - r > 25 && b - g > 15 && luminance < 160;
-    if (isNavy) {
-      return [0xee, 0xc0, 0x6b, a]; // recolor navy -> brand gold (--gold-400)
-    }
-    return [r, g, b, a];
+  // Applied to every instance on the page (nav copy + any showcase copy).
+  document.querySelectorAll(".js-key-shield").forEach(function (el) {
+    processLogoImage(el, function (r, g, b, a) {
+      var luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
+      if (luminance > 235) {
+        return [r, g, b, 0]; // near-white background -> transparent
+      }
+      var isNavy = b - r > 25 && b - g > 15 && luminance < 160;
+      if (isNavy) {
+        return [0xee, 0xc0, 0x6b, a]; // recolor navy -> brand gold (--gold-400)
+      }
+      return [r, g, b, a];
+    });
   });
 })();
