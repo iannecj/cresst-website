@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Program Investment — CRESST | UCF</title>
+<meta name="description" content="The two-year build-out, line by line — CRESST's draft program investment across four capability packages, totaling $10.0–12.0M." />
+<link rel="icon" href="assets/img/cresst-favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=eudoxus-sans@400,500,600,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img class="nav-shield-logo" id="cresstShieldLogo" src="assets/img/cresst-logo.png" alt="CRESST shield logo" />
+    <img class="nav-logo" src="assets/img/cresst-favicon.png" alt="CRESST shield logo" />
+    <img class="nav-patch-logo" src="assets/img/cresst-patch.png" alt="CRESST mission patch logo" />
+    <img class="nav-wordmark" src="assets/img/spaceu-wordmark.png" alt="Space U" />
+    <img class="nav-cresst-wordmark" id="cresstWordmarkKeyed" src="assets/img/cresst-wordmark-stylized.png" alt="CRESST — Center for Reliability Evaluation of Semiconductor and Space Technologies" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="investment.html" class="active">Investment</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="people.html">People</a></li>
+  </ul>
+  <a href="partner.html" class="btn btn-primary nav-cta">Partner <span class="btn-arrow">&rarr;</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 1H18" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M0 7H18" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M0 13H18" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="investment.html">Investment</a>
+  <a href="facilities.html">Facilities</a>
+  <a href="education.html">Education</a>
+  <a href="people.html">People</a>
+  <a href="partner.html">Partner With CRESST</a>
+</div>
+
+<section class="budget-hero">
+  <div class="budget-hero-bg">
+    <img src="assets/img/hero-solar-crossing.jpg" alt="" />
+    <div class="scrim"></div>
+    <div class="dots"></div>
+    <div class="sweep"></div>
+  </div>
+  <div class="container budget-hero-inner">
+    <div class="budget-hero-top">
+      <div class="budget-hero-copy reveal">
+        <p class="eyebrow">Program Investment &middot; Draft Workbook</p>
+        <h1 style="font-size:var(--text-display-lg,clamp(1.8rem,3.6vw,2.8rem));">The two-year build-out, line by line.</h1>
+        <p style="color:var(--paper-300);font-size:1rem;">Four capability packages — base program, failure-analysis laboratory, cryogenic power-instrument electronics, and the Winter Garden proton test cell — rendered from the source workbook, in priority order. Figures are draft planning numbers, not obligated funds.</p>
+      </div>
+      <div class="budget-hero-total reveal">
+        <p class="label">Total program envelope</p>
+        <div class="amt">$10.0&ndash;12.0M</div>
+        <p class="exact">$12,015,000 planning figure &middot; Winter Garden quote pending &middot; FY1 + FY2</p>
+      </div>
+    </div>
+
+    <div class="reveal">
+      <div class="envelope-bar" id="envelopeBar">
+        <div class="envelope-seg" data-seg="base" style="width:19%;"></div>
+        <div class="envelope-seg" data-seg="fa" style="width:25%;"></div>
+        <div class="envelope-seg" data-seg="cryo" style="width:14%;"></div>
+        <div class="envelope-seg" data-seg="wg" style="width:42%;"></div>
+      </div>
+      <div class="envelope-caption">
+        <span>SHARE OF ENVELOPE</span><span id="envelopeCaption">CRESST (Base) &middot; 19% of envelope</span>
+      </div>
+    </div>
+
+    <div class="data-table reveal priority-table" id="priorityTable">
+      <div class="data-table-head" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span>Priority</span><span>Budget item</span><span>Note</span><span style="text-align:right;">2-yr total</span>
+      </div>
+      <a href="#base" class="data-table-row" data-tab="base" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span class="p-num">1</span>
+        <span class="cap">CRESST (Base)</span>
+        <span class="purpose" style="color:var(--paper-400);">Initial two-year base budget — radiation effects and parts</span>
+        <span class="num">$2.305M</span>
+      </a>
+      <a href="#fa" class="data-table-row" data-tab="fa" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span class="p-num">2</span>
+        <span class="cap">FA Lab</span>
+        <span class="purpose" style="color:var(--paper-400);">Electronics-specific failure-analysis buy list</span>
+        <span class="num">$3.0M</span>
+      </a>
+      <a href="#cryo" class="data-table-row" data-tab="cryo" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span class="p-num">3</span>
+        <span class="cap">Cryo / Power Instrument Electronics</span>
+        <span class="purpose" style="color:var(--paper-400);">Critical capability area for space electronics</span>
+        <span class="num">$1.71M</span>
+      </a>
+      <a href="#wg" class="data-table-row" data-tab="wg" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span class="p-num">4</span>
+        <span class="cap">WG Upfit</span>
+        <span class="purpose" style="color:var(--paper-400);">Quote pending — $3&ndash;5M expected</span>
+        <span class="num">$3&ndash;5M</span>
+      </a>
+      <div class="data-table-row total-row" style="grid-template-columns:70px 1fr 1.3fr 130px;">
+        <span></span>
+        <span style="font-family:var(--font-display);font-size:.8rem;text-transform:uppercase;color:var(--paper-050);">Total requested</span>
+        <span style="font-family:var(--font-mono);font-size:.78rem;color:var(--paper-400);">Range reflects the pending Winter Garden quote</span>
+        <span style="font-family:var(--font-mono);font-size:.9rem;color:var(--gold-400);text-align:right;">$10.0&ndash;12.0M</span>
+      </div>
+    </div>
+
+    <div class="tab-grid reveal" id="tabGrid">
+      <button class="tab-card" data-tab="base">
+        <span class="code">PRIORITY 1</span>
+        <span class="label">CRESST (Base)</span>
+        <span class="fig">$2.305M</span>
+      </button>
+      <button class="tab-card" data-tab="fa">
+        <span class="code">PRIORITY 2</span>
+        <span class="label">FA Lab</span>
+        <span class="fig">$3.0M</span>
+      </button>
+      <button class="tab-card" data-tab="cryo">
+        <span class="code">PRIORITY 3</span>
+        <span class="label">Cryo / Power Instrument Electronics</span>
+        <span class="fig">$1.71M</span>
+      </button>
+      <button class="tab-card" data-tab="wg">
+        <span class="code">PRIORITY 4</span>
+        <span class="label">WG Upfit</span>
+        <span class="fig">$3&ndash;5M</span>
+      </button>
+    </div>
+  </div>
+</section>
+
+<section class="budget-body">
+  <div class="container budget-shell">
+    <aside class="budget-aside" id="budgetAside">
+      <div>
+        <span class="budget-aside-tag"><span class="dot"></span><span id="asideTag">Priority 1 &middot; TAB P1</span></span>
+        <h2 id="asideLabel">CRESST (Base)</h2>
+        <p class="sub" id="asideSub">Core program operations — beam time, pulsed-laser acquisition, certification content, workshops, and student support.</p>
+      </div>
+      <div>
+        <span class="count-label" id="countLabel">PACKAGE TOTAL</span>
+        <div class="count-up" id="countUp">$2,305,000</div>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:1rem;">
+        <div class="bar-row">
+          <div class="bar-row-top"><span>YEAR 1</span><span style="color:var(--gold-300);" id="asideY1">$1.255M</span></div>
+          <div class="bar-track"><div class="bar-fill gold" id="asideY1Bar" style="width:54%;"></div></div>
+        </div>
+        <div class="bar-row">
+          <div class="bar-row-top"><span>YEAR 2</span><span style="color:var(--sky-200);" id="asideY2">$1.05M</span></div>
+          <div class="bar-track"><div class="bar-fill sky" id="asideY2Bar" style="width:46%;"></div></div>
+        </div>
+      </div>
+      <div class="budget-aside-items">
+        <span class="lbl">LINE ITEMS</span>
+        <span class="val" id="asideCount">14</span>
+        <a href="assets/CRESST_BaseBudget_DRAFT.xlsx" download>Download workbook &darr;</a>
+      </div>
+    </aside>
+
+    <div class="line-items">
+      <div class="line-items-head">
+        <span>#</span><span>Spending category</span><span>Allocation</span><span style="text-align:right;">Year 1</span><span style="text-align:right;">Year 2</span>
+      </div>
+      <div id="lineItemsBody"></div>
+      <div class="line-items-total">
+        <span></span>
+        <span class="label" id="totalLabel">Total &middot; CRESST (Base)</span>
+        <span class="total" id="totalAmt">$2.305M</span>
+        <span style="font-family:var(--font-mono);font-size:.82rem;color:var(--gold-300);text-align:right;" id="totalY1">$1.255M</span>
+        <span style="font-family:var(--font-mono);font-size:.82rem;color:var(--gold-300);text-align:right;" id="totalY2">$1.05M</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/img/cresst-favicon.png" alt="CRESST logo" />
+      <img class="footer-wordmark" src="assets/img/spaceu-wordmark.png" alt="Space U" />
+      <span>&copy; 2026 CRESST</span>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="footer-col-label">Site</span>
+        <a href="investment.html">Investment</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="education.html">Education</a>
+        <a href="people.html">People</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:cresst@ucf.edu">cresst@ucf.edu</a>
+        <span>Orlando, Florida</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-disclaimer">MOCKUP — DRAFT BUDGET FIGURES SHOWN FOR INTERNAL REVIEW, NOT FOR PUBLICATION.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/investment.js"></script>
+</body>
+</html>

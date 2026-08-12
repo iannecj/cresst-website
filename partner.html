@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Partner With CRESST — UCF</title>
+<meta name="description" content="Consortium membership and MOU — join CRESST's two-year build-out with schedulable beam and lab time, influence over test methods, and NASA-style data packages." />
+<link rel="icon" href="assets/img/cresst-favicon.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link href="https://api.fontshare.com/v2/css?f[]=eudoxus-sans@400,500,600,700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<nav class="nav" id="nav">
+  <a href="index.html" class="nav-brand">
+    <img class="nav-shield-logo" id="cresstShieldLogo" src="assets/img/cresst-logo.png" alt="CRESST shield logo" />
+    <img class="nav-logo" src="assets/img/cresst-favicon.png" alt="CRESST shield logo" />
+    <img class="nav-patch-logo" src="assets/img/cresst-patch.png" alt="CRESST mission patch logo" />
+    <img class="nav-wordmark" src="assets/img/spaceu-wordmark.png" alt="Space U" />
+    <img class="nav-cresst-wordmark" id="cresstWordmarkKeyed" src="assets/img/cresst-wordmark-stylized.png" alt="CRESST — Center for Reliability Evaluation of Semiconductor and Space Technologies" />
+  </a>
+  <ul class="nav-links">
+    <li><a href="investment.html">Investment</a></li>
+    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="education.html">Education</a></li>
+    <li><a href="people.html">People</a></li>
+  </ul>
+  <a href="partner.html" class="btn btn-primary nav-cta">Partner <span class="btn-arrow">&rarr;</span></a>
+  <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+    <svg width="18" height="14" viewBox="0 0 18 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 1H18" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M0 7H18" stroke="currentColor" stroke-width="1.5"/>
+      <path d="M0 13H18" stroke="currentColor" stroke-width="1.5"/>
+    </svg>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="investment.html">Investment</a>
+  <a href="facilities.html">Facilities</a>
+  <a href="education.html">Education</a>
+  <a href="people.html">People</a>
+  <a href="partner.html">Partner With CRESST</a>
+</div>
+
+<header class="page-header">
+  <div class="container" style="display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(2.5rem,6vw,4.5rem);align-items:start;">
+    <div class="reveal" style="display:flex;flex-direction:column;gap:1.6rem;">
+      <p class="eyebrow">Partner With CRESST</p>
+      <h1 style="font-size:var(--text-display-lg,clamp(1.8rem,3.6vw,2.8rem));">Consortium membership and MOU.</h1>
+      <p class="lede" style="max-width:52ch;">Members join a two-year build-out already scoped against NASA STMD priorities. Membership is established through a memorandum of understanding with UCF; test work is scheduled against the capability calendar as each facility comes online.</p>
+      <div><span class="chip-gold">Draft — MOU terms pending review</span></div>
+      <div class="mou-steps">
+        <div class="mou-step">
+          <span class="node-circle sm">01</span>
+          <div class="mou-step-body">
+            <strong class="mou-step-title">Scoping call</strong>
+            <span class="mou-step-desc">Bring a part, a mission profile, or a capability gap. CRESST maps it to the assurance disciplines and the facility calendar.</span>
+          </div>
+        </div>
+        <div class="mou-step">
+          <span class="node-circle sm">02</span>
+          <div class="mou-step-body">
+            <strong class="mou-step-title">Memorandum of understanding</strong>
+            <span class="mou-step-desc">Membership is established through an MOU with UCF covering scope, data handling, and publication terms.</span>
+          </div>
+        </div>
+        <div class="mou-step">
+          <span class="node-circle sm">03</span>
+          <div class="mou-step-body">
+            <strong class="mou-step-title">Test plan and campaign</strong>
+            <span class="mou-step-desc">A written plan naming instruments, dose or energy conditions, sample counts, and acceptance criteria before hardware ships.</span>
+          </div>
+        </div>
+        <div class="mou-step">
+          <span class="node-circle sm">04</span>
+          <div class="mou-step-body">
+            <strong class="mou-step-title">Data package and review</strong>
+            <span class="mou-step-desc">NASA-style data package, failure-signature entries where applicable, and consortium review before external release.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <form class="inquiry-card reveal" id="inquiryForm">
+      <h3>Start an inquiry</h3>
+      <label class="field">
+        <span class="field-label">Organization</span>
+        <input type="text" name="organization" placeholder="Lockheed Martin Space" required />
+      </label>
+      <label class="field">
+        <span class="field-label">Contact name</span>
+        <input type="text" name="contact" placeholder="Full name" required />
+      </label>
+      <label class="field">
+        <span class="field-label">Work email</span>
+        <input type="email" name="email" placeholder="name@organization.com" required />
+      </label>
+      <label class="field">
+        <span class="field-label">Mission or program</span>
+        <input type="text" name="mission" placeholder="Artemis surface element, lunar lander avionics…" />
+      </label>
+      <div class="field">
+        <span class="field-label">Capability of interest</span>
+        <div class="chip-row" id="interestChips">
+          <button type="button" class="chip-toggle">Proton / SEE</button>
+          <button type="button" class="chip-toggle">Failure analysis</button>
+          <button type="button" class="chip-toggle">Cryogenic TVAC</button>
+          <button type="button" class="chip-toggle">Advanced packaging</button>
+          <button type="button" class="chip-toggle">COTS screening</button>
+          <button type="button" class="chip-toggle">Workforce</button>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary btn-block">Submit Inquiry <span class="btn-arrow">&rarr;</span></button>
+      <p class="field-note">Or email cresst@ucf.edu directly. Responses within five business days.</p>
+    </form>
+  </div>
+</header>
+
+<section class="section reveal" style="background:var(--navy-900);">
+  <div class="container">
+    <div class="section-head">
+      <p class="eyebrow">What Members Get</p>
+      <h2>Access, influence, and data.</h2>
+    </div>
+    <div class="focus-grid">
+      <article class="focus-card">
+        <span class="focus-index">01</span>
+        <h3>Schedulable beam and lab time</h3>
+        <p>Standing allocation on the Winter Garden proton cell, pulsed-laser bench, and failure-analysis chain as each comes online.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">02</span>
+        <h3>Influence over test methods</h3>
+        <p>Members review and shape assurance methods, screening flows, and derating guidance before they are published.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">03</span>
+        <h3>NASA-style data packages</h3>
+        <p>Documentation written to the format NASA reviewers expect, including failure-signature entries and traceable chain of custody.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">04</span>
+        <h3>Early access to the signature library</h3>
+        <p>The accumulating failure-signature library is available to members ahead of public release.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">05</span>
+        <h3>Workforce access</h3>
+        <p>Direct line to students trained on the same instruments, through internships, capstones, and the certificate pathway.</p>
+      </article>
+      <article class="focus-card">
+        <span class="focus-index">06</span>
+        <h3>Consortium forum</h3>
+        <p>A seat at the annual CRESST workshop and the standing technical exchange between NASA centers and primes.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section class="section reveal">
+  <div class="container">
+    <div class="section-head" style="display:flex;justify-content:space-between;align-items:flex-end;gap:2rem;flex-wrap:wrap;max-width:none;">
+      <div style="max-width:64ch;">
+        <p class="eyebrow">Letters Of Support</p>
+        <h2>Organizations already behind CRESST.</h2>
+        <p class="lede">NASA centers, aerospace primes, semiconductor suppliers, and space startups have written in support of the CRESST-MSTAR proposal.</p>
+      </div>
+      <span style="font-family:var(--font-mono);font-size:.66rem;letter-spacing:.1em;text-transform:uppercase;color:var(--gold-500);">12 letters on file</span>
+    </div>
+    <div class="support-grid">
+      <div class="support-tile">
+        <div class="support-logo"><img src="assets/img/partners/nasa.webp" alt="NASA" /></div>
+        <span class="support-tag">NASA</span>
+        <h3 class="support-org">NASA Jet Propulsion Laboratory</h3>
+        <p class="support-signer">Brian Y. Lim</p>
+        <p class="support-title">Program Area Manager, Capabilities and Products Office</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><img src="assets/img/partners/nasa.webp" alt="NASA" /></div>
+        <span class="support-tag">NASA</span>
+        <h3 class="support-org">NASA Johnson Space Center</h3>
+        <p class="support-signer">Mary E. McCabe</p>
+        <p class="support-title">Division Chief, Avionics System Division</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><img src="assets/img/partners/lockheed-martin.png" alt="Lockheed Martin" /></div>
+        <span class="support-tag">Aerospace prime</span>
+        <h3 class="support-org">Lockheed Martin</h3>
+        <p class="support-signer">Tahllee Baynard &middot; Zach Sheman</p>
+        <p class="support-title">VP Ignite &middot; Director, Government Relations</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><img src="assets/img/partners/spacex.svg" alt="SpaceX" /></div>
+        <span class="support-tag">Commercial space</span>
+        <h3 class="support-org">SpaceX</h3>
+        <p class="support-signer">Scott Shermer</p>
+        <p class="support-title">Director, Radiation Effects</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Semiconductor supplier</span>
+        <h3 class="support-org">EPC Space</h3>
+        <p class="support-signer">Bel Lazar</p>
+        <p class="support-title">Chief Executive Officer</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Semiconductor supplier</span>
+        <h3 class="support-org">Infineon HiRel</h3>
+        <p class="support-signer">Signatory pending</p>
+        <p class="support-title">Letter of support on file</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Semiconductor supplier</span>
+        <h3 class="support-org">Microchip Technology</h3>
+        <p class="support-signer">Mahmud Reaz, Ph.D.</p>
+        <p class="support-title">Principal Engineer</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Semiconductor supplier</span>
+        <h3 class="support-org">Q-Tech Corporation</h3>
+        <p class="support-signer">Daniel Moline</p>
+        <p class="support-title">President</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Avionics</span>
+        <h3 class="support-org">Honeywell Space</h3>
+        <p class="support-signer">Signatory pending</p>
+        <p class="support-title">Letter of support on file</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">RF &amp; microwave</span>
+        <h3 class="support-org">RF Laboratories</h3>
+        <p class="support-signer">David J. Zima</p>
+        <p class="support-title">President</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Space startup</span>
+        <h3 class="support-org">TAU Systems</h3>
+        <p class="support-signer">Jerome Paye</p>
+        <p class="support-title">Chief Executive Officer</p>
+      </div>
+      <div class="support-tile">
+        <div class="support-logo"><span class="placeholder">Drop logo</span></div>
+        <span class="support-tag">Space startup</span>
+        <h3 class="support-org">Spargo Space Corporation</h3>
+        <p class="support-signer">Signatory pending</p>
+        <p class="support-title">Founder and Chief Executive Officer</p>
+      </div>
+    </div>
+    <p class="support-note">Logo tiles are drop zones — drag a mark onto any tile to fill it. Signatories shown as signed on the letters of support.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <img class="footer-logo" src="assets/img/cresst-favicon.png" alt="CRESST logo" />
+      <img class="footer-wordmark" src="assets/img/spaceu-wordmark.png" alt="Space U" />
+      <span>&copy; 2026 CRESST</span>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <span class="footer-col-label">Site</span>
+        <a href="investment.html">Investment</a>
+        <a href="facilities.html">Facilities</a>
+        <a href="education.html">Education</a>
+        <a href="people.html">People</a>
+      </div>
+      <div class="footer-col">
+        <span class="footer-col-label">Contact</span>
+        <a href="mailto:cresst@ucf.edu">cresst@ucf.edu</a>
+        <span>Orlando, Florida</span>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p class="footer-disclaimer">MOCKUP — DRAFT BUDGET FIGURES SHOWN FOR INTERNAL REVIEW, NOT FOR PUBLICATION.</p>
+  </div>
+</footer>
+
+<script src="js/script.js"></script>
+<script src="js/partner.js"></script>
+</body>
+</html>
