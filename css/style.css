@@ -789,6 +789,16 @@ p {
   max-width: 440px;
   height: auto;
 }
+/* These two source files have no higher-resolution original available
+   (400x400 and 244x62 native) — cap width at native size so they shrink
+   on narrow viewports like the rest of the stack but are never upscaled
+   past their real resolution, which is what caused the blur. */
+.logo-showcase-stack img.showcase-cap-400 {
+  width: min(25vw, 400px);
+}
+.logo-showcase-stack img.showcase-cap-244 {
+  width: min(25vw, 244px);
+}
 
 footer {
   border-top: 1px solid var(--line-soft);
