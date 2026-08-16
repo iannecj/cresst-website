@@ -1571,6 +1571,24 @@ a.data-table-row {
   color: var(--gold-400);
   line-height: 1;
 }
+.investment-teaser-figure .ask-split {
+  font-family: var(--font-mono);
+  font-size: clamp(1rem, 2vw, 1.3rem);
+  letter-spacing: 0.02em;
+  margin-top: 0.4rem;
+}
+.investment-teaser-figure .ask-split .ucf {
+  color: var(--gold-300);
+}
+.investment-teaser-figure .ask-split .fse {
+  color: var(--periwinkle);
+}
+.investment-teaser-figure .ask-split .split-flag {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-500);
+  margin-left: 0.2em;
+}
 .investment-teaser-figure .cap {
   font-family: var(--font-mono);
   font-size: 0.68rem;
@@ -1748,6 +1766,24 @@ a.data-table-row {
   color: var(--paper-050);
   line-height: 1;
   letter-spacing: -0.01em;
+}
+.budget-hero-total .ask-split {
+  font-family: var(--font-mono);
+  font-size: clamp(1.1rem, 2.2vw, 1.5rem);
+  letter-spacing: 0.02em;
+  margin-top: 0.4rem;
+}
+.budget-hero-total .ask-split .ucf {
+  color: var(--gold-300);
+}
+.budget-hero-total .ask-split .fse {
+  color: var(--periwinkle);
+}
+.budget-hero-total .ask-split .split-flag {
+  font-size: 0.6rem;
+  letter-spacing: 0.08em;
+  color: var(--gold-500);
+  margin-left: 0.2em;
 }
 .budget-hero-total .exact {
   font-family: var(--font-mono);
