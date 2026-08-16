@@ -2094,6 +2094,19 @@ a.data-table-row {
   grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
   gap: 1.25rem;
   width: 100%;
+  align-items: start;
+}
+.org-dept-stack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.org-dept-card.compact {
+  padding: 1.2rem 1.4rem;
+  gap: 0.9rem;
+}
+.org-dept-card.compact .org-dept-name {
+  font-size: 0.86rem;
 }
 .org-dept-card {
   background: var(--navy-850);
