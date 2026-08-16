@@ -52,13 +52,11 @@
   // crossfade at the loop seam. Real continuous playback via
   // video.playbackRate is the only way to get genuinely smooth motion
   // (a play/pause burst-cycle trick was tried first to hit an exact speed,
-  // but it visibly stutters — every burst is a small hard jump). Chromium
-  // clamps playbackRate to a minimum of 0.0625 (1/16), so that's the floor
-  // used here instead of a lower but stuttery approximation.
+  // but it visibly stutters — every burst is a small hard jump).
   var heroVideo = document.getElementById("heroVideo");
   if (heroVideo && !reduceMotion) {
-    var MIN_RATE = 0.0625;
-    var MAX_OPACITY = 0.85;
+    var MIN_RATE = 0.5;
+    var MAX_OPACITY = 0.55;
     var LOOP_FADE_SECONDS = 1; // video-content seconds faded at each loop seam
     var PAGE_FADE_MS = 1600; // real-time fade-in on first load
 
