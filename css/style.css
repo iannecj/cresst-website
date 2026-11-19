@@ -2552,3 +2552,29 @@ a.data-table-row {
     grid-template-columns: 1fr;
   }
 }
+
+/* ---------- capability status table (Rev 4) ---------- */
+.cols-cap {
+  grid-template-columns: 1.1fr 1.7fr 1.8fr 1.25fr;
+}
+.cap-status {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  font-size: 0.8rem;
+  color: var(--paper-300);
+}
+.cap-status .stage {
+  font-family: var(--font-mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+.cap-note {
+  margin-top: 0.9rem;
+  font-family: var(--font-mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.06em;
+  color: var(--paper-400);
+}

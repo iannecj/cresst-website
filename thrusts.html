@@ -21,7 +21,7 @@
   </a>
   <ul class="nav-links">
     <li><a href="thrusts.html" class="active">Thrusts</a></li>
-    <li><a href="facilities.html">Facilities</a></li>
+    <li><a href="facilities.html">Services/Facilities</a></li>
     <li><a href="education.html">Education</a></li>
     <li><a href="people.html">People</a></li>
   </ul>
@@ -37,7 +37,7 @@
 
 <div class="mobile-menu" id="mobileMenu">
   <a href="thrusts.html">Thrusts</a>
-  <a href="facilities.html">Facilities</a>
+  <a href="facilities.html">Services/Facilities</a>
   <a href="education.html">Education</a>
   <a href="people.html">People</a>
   <a href="partner.html">Partner With CRESST</a>
@@ -97,30 +97,85 @@
   </div>
 </section>
 
-<section class="section grid-bg" id="roadmap" style="background:var(--navy-900);">
+<section class="section reveal" id="roadmap" style="background:var(--navy-900);">
   <div class="container">
-    <div class="section-head reveal">
-      <p class="eyebrow">Capability Roadmap</p>
-      <h2>Today, planned, and future.</h2>
-      <p class="lede">Test capability grows in three stages. Availability of any capability should be confirmed with CRESST before planning a campaign.</p>
+    <div class="section-head">
+      <p class="eyebrow">Test Capability</p>
+      <h2>Now, in development, and planned.</h2>
+      <p class="lede">One center for test planning, failure analysis, and parts assurance: X-ray and laser screening on campus, protons at a local UCF partner facility, and heavy-ion campaigns at Texas A&amp;M.</p>
     </div>
-    <div class="focus-grid reveal">
-      <article class="focus-card">
-        <span class="focus-index">TODAY</span>
-        <h3>Available now</h3>
-        <p>Xrad320 X-ray irradiation; in-house alpha, neutron, and californium-252 (Cf-252) sources; proton beam time at Winter Garden.</p>
-      </article>
-      <article class="focus-card">
-        <span class="focus-index">PLANNED</span>
-        <h3>Core launch</h3>
-        <p>Pulsed-laser single-event-effect (SEE) screening; a 50 K thermal vacuum (TVAC) chamber with 50 kV feedthroughs; heavy-ion campaigns at Texas A&amp;M.</p>
-      </article>
-      <article class="focus-card">
-        <span class="focus-index">FUTURE</span>
-        <h3>Capability thrusts</h3>
-        <p>A 200-MeV Winter Garden proton test cell, a failure-analysis laboratory, and a 40&ndash;400 K cryogenic and high-voltage power electronics lab with a lunar grid emulator.</p>
-      </article>
+    <div class="data-table cap-table">
+      <div class="data-table-head cols-cap">
+        <span>Capability</span><span>Facility</span><span>Test focus</span><span>Status</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Protons</span>
+        <span class="purpose">UCF partner facility, local to Orlando &middot; 50&ndash;230 MeV, up to 4&times;10<sup>7</sup> p/cm<sup>2</sup>/s, 2&ndash;40 cm fields</span>
+        <span class="purpose">Single-event effects, total ionizing dose, displacement damage, system-level payload tests</span>
+        <span class="cap-status"><span class="stage">NOW</span>Available Through a Partner Facility</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Heavy ions</span>
+        <span class="purpose">Texas A&amp;M Radiation Effects Facility</span>
+        <span class="purpose">Single-event effects screening at high linear energy transfer (LET)</span>
+        <span class="cap-status"><span class="stage">NOW &middot; test trips under way</span>Available Through a Partner Facility</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">X-ray</span>
+        <span class="purpose">Xrad320 irradiator on campus</span>
+        <span class="purpose">Total ionizing dose and dose-rate studies</span>
+        <span class="cap-status"><span class="stage">NOW</span>Available Directly Through CRESST</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Alpha, neutron, Cf-252</span>
+        <span class="purpose">In-house radioactive sources</span>
+        <span class="purpose">Alpha and neutron sensitivity, source-based soft-error checks</span>
+        <span class="cap-status"><span class="stage">NOW</span>Available Directly Through CRESST</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Electronics failure analysis</span>
+        <span class="purpose">UCF shared facility</span>
+        <span class="purpose">Root-cause analysis of failed parts</span>
+        <span class="cap-status"><span class="stage">NOW</span>Available Through a UCF Shared Facility</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Pulsed laser</span>
+        <span class="purpose">Pulsed-laser single-event screening on campus</span>
+        <span class="purpose">Event localization and sensitive-area mapping before beam time</span>
+        <span class="cap-status"><span class="stage">IN DEVELOPMENT &middot; being installed</span>Capability in Development</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Cryogenic thermal vacuum</span>
+        <span class="purpose">50 K thermal vacuum (TVAC) chamber with 50 kV feedthroughs</span>
+        <span class="purpose">Energized electronics under space thermal-vacuum conditions</span>
+        <span class="cap-status"><span class="stage">IN DEVELOPMENT</span>Capability in Development</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Advanced packaging</span>
+        <span class="purpose">With the Florida Semiconductor Engine (FSE)</span>
+        <span class="purpose">Radiation- and cold-hardened packaging</span>
+        <span class="cap-status"><span class="stage">IN DEVELOPMENT</span>Capability in Development</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Dedicated proton test cell</span>
+        <span class="purpose">UCF partner facility, local to Orlando</span>
+        <span class="purpose">Schedulable single-event and total-dose campaigns</span>
+        <span class="cap-status"><span class="stage">PLANNED &middot; future thrust</span>Capability in Development</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Failure analysis laboratory</span>
+        <span class="purpose">CRESST laboratory build-out</span>
+        <span class="purpose">Full electronics failure-analysis chain under chain of custody</span>
+        <span class="cap-status"><span class="stage">PLANNED &middot; future thrust</span>Capability in Development</span>
+      </div>
+      <div class="data-table-row cols-cap">
+        <span class="cap">Cryogenic &amp; HV power electronics</span>
+        <span class="purpose">40&ndash;400 K cryostat, lunar grid emulator</span>
+        <span class="purpose">Power electronics at cryogenic temperature and high voltage</span>
+        <span class="cap-status"><span class="stage">PLANNED &middot; future thrust</span>Capability in Development</span>
+      </div>
     </div>
+    <p class="cap-note">Status as of October 2026. Confirm availability with CRESST before planning a campaign.</p>
   </div>
 </section>
 
@@ -134,8 +189,8 @@
     <div class="focus-grid reveal">
       <article class="focus-card">
         <span class="focus-index">THRUST 01</span>
-        <h3>Winter Garden Proton Test Cell</h3>
-        <p>A 200-MeV proton cell outfitted for single-event-effects and total-ionizing-dose campaigns, giving CRESST and its partners local beam access on a schedulable calendar. Quote pending.</p>
+        <h3>Local Proton Beam Test Cell</h3>
+        <p>A dedicated proton test cell at a local UCF partner facility, outfitted for single-event-effects and total-ionizing-dose campaigns, giving CRESST and its partners local beam access on a schedulable calendar. Quote pending.</p>
       </article>
       <article class="focus-card">
         <span class="focus-index">THRUST 02</span>
@@ -149,7 +204,7 @@
       </article>
     </div>
     <div class="teaser-footer reveal">
-      <a href="facilities.html" class="btn btn-ghost">See Facilities &amp; Capabilities <span class="btn-arrow">&rarr;</span></a>
+      <a href="facilities.html" class="btn btn-ghost">See Services/Facilities <span class="btn-arrow">&rarr;</span></a>
     </div>
   </div>
 </section>
@@ -181,7 +236,7 @@
       <div class="footer-col">
         <span class="footer-col-label">Site</span>
         <a href="thrusts.html">Thrusts</a>
-        <a href="facilities.html">Facilities</a>
+        <a href="facilities.html">Services/Facilities</a>
         <a href="education.html">Education</a>
         <a href="people.html">People</a>
       </div>
