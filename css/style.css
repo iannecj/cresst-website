@@ -1107,7 +1107,7 @@ a.data-table-row {
   color: var(--sky-200);
 }
 .cols-facility {
-  grid-template-columns: 2.1fr 3fr 0.9fr;
+  grid-template-columns: 2.1fr 3fr;
 }
 .cols-borrow {
   grid-template-columns: 1.1fr 150px 2.4fr;
@@ -2577,4 +2577,46 @@ a.data-table-row {
   font-size: 0.66rem;
   letter-spacing: 0.06em;
   color: var(--paper-400);
+}
+
+/* ---------- thrust details & innovation (Rev 5) ---------- */
+a.focus-card {
+  text-decoration: none;
+  color: inherit;
+}
+.focus-more {
+  margin-top: auto;
+  font-family: var(--font-mono);
+  font-size: 0.64rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--gold-400);
+}
+.thrust-foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.thrust-foot .cap-note {
+  max-width: 72ch;
+  margin: 0;
+  line-height: 1.6;
+}
+.thrust-links {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+.thrust-detail {
+  scroll-margin-top: 120px;
+}
+.research-names {
+  font-family: var(--font-mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--sky-200);
+  line-height: 1.6;
 }
